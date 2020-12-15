@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Component Library</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <h1>Vijay's Component Library</h1>
@@ -16,6 +17,7 @@
     <h1>For the big headings - Here's the Big Heading :P</h1>
     <h2>A heading but not so big - Here's H2 heading!! </h2>
     <p>Well this is just paragraph text... Ya used to write the bulk of the words.... Like a paragraph... 'P'!!</p>
+    <p>This para will have some <strong>bold</strong> text.</p>
     <small>Size is a little smaller than paragraph... Ya basically 'small' !!</small>
 
     <hr>
@@ -23,17 +25,17 @@
     <h2>Containers</h2>
 
     <h3>Fluid Container</h3>
-    <div>Like the name says, flows freely till the end of the page from the start of the page</div>
+    <div class="container">Like the name says, flows freely till the end of the page from the start of the page</div>
 
     <h3>Centre Container</h3>
-    <div>So the text here is centre aligned and it occupies only the specified width. Pretty nooicceee</div>
+    <div class="container container-centre">So the text here is centre aligned and it occupies only the specified width. Pretty nooicceee</div>
 
     <hr>
 
     <h2>Links</h2>
 
-    <a href="/">Primary Link; Means like the main CTA of a page types</a>
-    <a href="/">Secondary Link; The other links to other pages types</a>
+    <a class="link link-primary" href="/">Primary Link</a>
+    <a class="link link-secondary" href="/">Secondary Link</a>
 
     <hr>
 
@@ -41,7 +43,7 @@
 
     <h3>Unordered List</h3>
 
-    <ul>
+    <ul class="list-non-bullet">
         <li>First Item</li>
         <li>Second Item</li>
         <li>Third Item</li>
@@ -50,14 +52,14 @@
 
     <h3>Unordered Inline List</h3>
 
-    <ul>
-        <li>First Item Inline</li>
-        <li>Second item Inline</li>
+    <ul class="list-non-bullet">
+        <li class="list-item-inline">First Item Inline</li>
+        <li class="list-item-inline">Second item Inline</li>
     </ul>
 
     <h3>Reverse Ordered list</h3>
 
-    <ol>
+    <ol reversed>
         <li>Idly</li>
         <li>Podi</li>
         <li>Sambhar</li>
@@ -67,18 +69,22 @@
 
     <h2>Navigation</h2>
 
-    <div>I am Batman!</div>
-    <ul>
-        <li>
-            <a href="/">Home</a>
-        </li>
-        <li>
-            <a href="/">Products</a>
-        </li>
-        <li>
-            <a href="/">About</a>
-        </li>
-    </ul>
+    <nav class = "navigation container">
+
+        <div class = "nav-brand">I am Batman!</div>
+        <ul class = "list-non-bullet nav-pills">
+            <li class = "list-item-inline">
+                <a class = "link link-active" href="/">Home</a>
+            </li> 
+            <li class = "list-item-inline">
+                <a class = "link" href="/">Products</a> 
+            </li> 
+            <li class = "list-item-inline">
+                <a class = "link" href="/">About</a>
+            </li>
+        </ul>
+
+    </nav>
 
     <hr>
 
