@@ -3,127 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Component Library</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Home for Vijay</title>
+    <link href="styles.css" rel="stylesheet" />
 </head>
 <body>
-    <h1>Vijay's Component Library</h1>
-    <p>I am attending the noeg.camp. It has been preety exciting :) Well here's alll the various components that i will be using in my page :)</p>
-
-    <hr>
-
-    <h2>Typography :)</h2>
-
-    <h1>For the big headings - Here's the Big Heading :P</h1>
-    <h2>A heading but not so big - Here's H2 heading!! </h2>
-    <p>Well this is just paragraph text... Ya used to write the bulk of the words.... Like a paragraph... 'P'!!</p>
-    <p>This para will have some <strong>bold</strong> text.</p>
-    <small>Size is a little smaller than paragraph... Ya basically 'small' !!</small>
-
-    <hr>
-
-    <h2>Containers</h2>
-
-    <h3>Fluid Container</h3>
-    <div class="container">Like the name says, flows freely till the end of the page from the start of the page</div>
-
-    <h3>Centre Container</h3>
-    <div class="container container-centre">So the text here is centre aligned and it occupies only the specified width. Pretty nooicceee</div>
-
-    <hr>
-
-    <h2>Links</h2>
-
-    <a class="link link-primary" href="/">Primary Link</a>
-    <a class="link link-secondary" href="/">Secondary Link</a>
-
-    <hr>
-
-    <h2>Lists</h2>
-
-    <h3>Unordered List</h3>
-
-    <ul class="list-non-bullet">
-        <li>First Item</li>
-        <li>Second Item</li>
-        <li>Third Item</li>
-
-    </ul>
-
-    <h3>Unordered Inline List</h3>
-
-    <ul class="list-non-bullet">
-        <li class="list-item-inline">First Item Inline</li>
-        <li class="list-item-inline">Second item Inline</li>
-    </ul>
-
-    <h3>Reverse Ordered list</h3>
-
-    <ol reversed>
-        <li>Idly</li>
-        <li>Podi</li>
-        <li>Sambhar</li>
-    </ol>
-
-    <hr>
-
-    <h2>Navigation</h2>
-
     <nav class = "navigation container">
 
-        <div class = "nav-brand">I am Batman!</div>
+        <div class = "nav-brand">Vijay Sandilya</div>
         <ul class = "list-non-bullet nav-pills">
             <li class = "list-item-inline">
                 <a class = "link link-active" href="/">Home</a>
             </li> 
             <li class = "list-item-inline">
-                <a class = "link" href="/">Products</a> 
+                <a class = "link" href="/projects.html">Projects</a> 
             </li> 
             <li class = "list-item-inline">
-                <a class = "link" href="/">About</a>
+                <a class = "link" href="/blogs.html">Blogs</a>
             </li>
         </ul>
 
     </nav>
 
-    <hr>
+    <header class = "hero">
 
-    <h2>Header</h2>
-
-    <header>
-
-        <img src="Images/hero.svg" alt="">
-        <h1>Heading inside Hero</h1>
+        <img class = "hero-img" src="Images/hero.svg">
+        <h1 class = "hero-heading">Aspirational Web Developer :)</h1>
     </header>
 
-    <hr>
-
-    <h2>Sections</h2>
-    
-    <h3>White Section</h3>
-
-    <section>
-        <p>Will have a white background</p>
+    <section class="section ow">
+        <div class="container container-centre">
+            <h1>About Me</h1>
+            <p>I am a Product Marketer by profession. Technology has always been my achiles heel and hence i am trying to learn web delelopment. Hoping to learn HTML5, CSS3, NodeJS, ReactJS, Javascript and Web Hosting. Ok basically A-Z of takling a website live :)</p>
+        </div>
     </section>
 
-    <h3>Grey Section</h3>
-
-    <section>
-        <p>Will have a grey background</p>
+    <section class="section">
+        <div class="container container-centre">
+            <h1>Projects</h1>
+            <p>Some of the projects that i have worked on are listed here!</p>
+            <a class="link link-primary" href="/">See Projects</a>
+        </div>
+        
     </section>
 
-    <hr>
-
-    <h2>Footer</h2>
-
-    <footer>
-        <div>Footer Text</div>
-        <ul>
-            <li>Social 1</li>
-            <li>Social 2</li>
-            <li>Social 3</li>
-        </ul>
-    </footer>
+    <section class="section ow">
+        <div class="container container-centre">
+            <h1>Blogs</h1>
+            <p>I like to document my learnings and my experiences. Give them a read maybe?</p>
+            <a class="link link-secondary" href="/">Read Blogs</a>
+        </div>
+    </section>
     
 </body>
-</html> 
+
+<h2>Footer</h2>
+
+    <footer class="footer">
+        <div class="footer-header">Reach out to me!</div>
+        <ul class="socail-links list-non-bullet">
+            <li class="list-item-inline"><a class="link" href="/">
+                GitHub
+
+                </a> 
+            </li>
+            <li class="list-item-inline"><a class="link" href="/">
+                LinkedIn
+
+                </a> 
+            </li>
+            <li class="list-item-inline"><a class="link" href="/">
+                Twitter
+
+                </a> 
+            </li>
+        </ul>
+    </footer>
+
+</html>
