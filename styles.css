@@ -33,6 +33,12 @@ hr
     margin: auto;
 }
 
+.blog-centre
+{
+    max-width: 1000px;
+    margin: auto;
+}
+
 /** links **/
 
 
@@ -125,6 +131,14 @@ hr
     text-align: center; 
 }
 
+.date
+{
+    text-align: center;
+    font-size: small;
+    font-weight: bold;
+
+}
+
 /** Section **/
 
 .section 
@@ -135,6 +149,13 @@ hr
 .section h1 
 {
     text-align: center;
+}
+
+.section .section-img
+{
+    max-width: 350px;
+    display: block;
+    margin: auto;
 }
 
 .ow 
@@ -167,4 +188,17 @@ hr
 .footer ul 
 {
     padding-inline-start: 0px;
+}
+
+
+/** projects **/
+.showcase-list 
+{
+    padding: 2rem;
+}
+
+/** blogs **/
+.showcase-blog 
+{
+    padding-bottom: 6rem;
 }
